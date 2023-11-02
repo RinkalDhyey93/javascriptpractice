@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+</head>
+<body>
+    <h1>Chai aur Code</h1>
+    <button id="stop">Stop</button>
+</body>
+<!-- Clearinterval,cleartimeout musst Read -->
+<script>
+    //take 2 second ime and than print
+   
+    const sayrinkal=function(){
+        console.log("rinkal")
+    }
+
+   const changeText=function(){
+    document.querySelector('h1').innerHTML="Best Js Series"
+   }
+
+   const changeme= setTimeout(changeText,2000)
+    
+   document.querySelector('#stop').addEventListener('click',function(e){clearTimeout(changeme)
+console.log("STOPEED")})
+    
+</script>
+</html>
